@@ -1,0 +1,131 @@
+# The lines starting with # are interpreted as comments.
+#
+# Each should contain the canonical name of a class.
+# Classes in a package can be grouped by ending a line with the package name 
+# followed by "*".
+# Classes in a package and subpackages can be grouped by ending a line with the 
+# package name followed by "**".
+# Lines starting with '!' denies access to a class, a package or a subpackage.
+#
+# The order is important. As the file is read, access is revoked or granted to 
+# classes depending on the previous state.  
+#
+
+!**
+
+java.lang.**
+
+java.awt.**
+
+java.beans.*
+java.beans.beancontext.*
+
+java.io.**
+java.nio.**
+
+java.lang.**
+
+java.math.*
+
+
+java.rmi.RemoteException
+
+java.security.*
+java.security.spec.*
+java.security.interfaces.*
+
+java.sql.*
+
+java.text.*
+
+java.util.**
+
+javax.accessibility.*
+
+javax.mail.**
+javax.activation.*
+
+!javax.activity.*
+
+javax.annotation.*
+javax.annotation.processing.*
+
+javax.crypto.*
+javax.crypto.interfaces.*
+javax.crypto.spec.*
+
+!javax.jws.*
+
+!javax.lang.model.**
+
+java.net.*
+javax.net.*
+javax.net.ssl.*
+
+javax.script.*
+
+javax.security.auth.*
+javax.security.auth.callback.*
+javax.security.auth.kerberos.*
+javax.security.auth.login.*
+javax.security.auth.spi.*
+javax.security.auth.x500.*
+javax.security.cert.*
+javax.security.sasl.*
+
+javax.sql.*
+javax.sql.rowset.*
+javax.sql.rowset.serial.*
+javax.sql.rowset.spi.*
+
+javax.transaction.*
+javax.transaction.xa.*
+
+javax.xml.XMLConstants
+
+javax.xml.bind.**
+
+javax.xml.crypto.*
+
+javax.xml.datatype.*
+javax.xml.namespace.*
+javax.xml.parsers.*
+!javax.xml.soap.**
+
+javax.xml.stream.*
+javax.xml.stream.events.*
+javax.xml.stream.util.*
+javax.xml.transform.*
+javax.xml.transform.dom.*
+javax.xml.transform.sax.*
+javax.xml.transform.stream.*
+javax.xml.validation.*
+!javax.xml.ws.**
+javax.xml.xpath.*
+
+javax.imageio.IIOException
+javax.imageio.ImageIO
+javax.imageio.stream.**
+
+org.w3c.dom.**
+
+org.xml.sax.**
+
+# Required by TIKADocumentExtractor.
+# Consider adding a custom, controlled-version implementation of Xerces
+# http://xerces.apache.org/
+# org.apache.html.dom.*
+# org.apache.wml.**
+# org.apache.xerces.**
+# !org.apache.xerces.impl.**
+# org.apache.xml.serialize.*
+# org.apache.poi.hslf.model.*
+
+# Sun reflect bugs
+# http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=6265952
+sun.reflect.ConstructorAccessorImpl
+sun.reflect.MethodAccessorImpl
+sun.reflect.SerializationConstructorAccessorImpl
+
+# Required by JAXB
+com.sun.xml.internal.bind.v2.**

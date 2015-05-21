@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+  <classpathentry kind="src" path="src/test/java" output="target/test-classes" including="**/*.java"/>
+  <classpathentry kind="src" path="src/main/java" including="**/*.java"/>
+  <classpathentry kind="output" path="target/classes"/>
+  <classpathentry kind="var" path="M2_REPO/javax/servlet/javax.servlet-api/3.0.1/javax.servlet-api-3.0.1.jar" sourcepath="M2_REPO/javax/servlet/javax.servlet-api/3.0.1/javax.servlet-api-3.0.1-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/home/etuya/.m2/repository/javax/servlet/javax.servlet-api/3.0.1/javax.servlet-api-3.0.1-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/javax/activation/activation/1.1/activation-1.1.jar" sourcepath="M2_REPO/javax/activation/activation/1.1/activation-1.1-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/javax/validation/validation-api/1.1.0.Final/validation-api-1.1.0.Final.jar"/>
+  <classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+  <classpathentry kind="var" path="M2_REPO/junit/junit/3.8.1/junit-3.8.1.jar"/>
+  <classpathentry kind="var" path="M2_REPO/ar/com/asanteit/esp/esp-spi/2.7.4/esp-spi-2.7.4.jar"/>
+  <classpathentry kind="var" path="M2_REPO/ar/com/asanteit/esp/esp-jaxrs-support/2.7.4/esp-jaxrs-support-2.7.4.jar"/>
+  <classpathentry kind="var" path="M2_REPO/ar/com/asanteit/esp/esp-auth-support/2.7.4/esp-auth-support-2.7.4.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/jboss/resteasy/jaxrs-api/3.0.10.Final/jaxrs-api-3.0.10.Final.jar" sourcepath="M2_REPO/org/jboss/resteasy/jaxrs-api/3.0.10.Final/jaxrs-api-3.0.10.Final-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/jboss/resteasy/resteasy-jsapi/3.0.10.Final/resteasy-jsapi-3.0.10.Final.jar" sourcepath="M2_REPO/org/jboss/resteasy/resteasy-jsapi/3.0.10.Final/resteasy-jsapi-3.0.10.Final-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/jboss/resteasy/resteasy-jaxrs/3.0.10.Final/resteasy-jaxrs-3.0.10.Final.jar" sourcepath="M2_REPO/org/jboss/resteasy/resteasy-jaxrs/3.0.10.Final/resteasy-jaxrs-3.0.10.Final-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/jboss/spec/javax/annotation/jboss-annotations-api_1.1_spec/1.0.1.Final/jboss-annotations-api_1.1_spec-1.0.1.Final.jar" sourcepath="M2_REPO/org/jboss/spec/javax/annotation/jboss-annotations-api_1.1_spec/1.0.1.Final/jboss-annotations-api_1.1_spec-1.0.1.Final-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/home/etuya/.m2/repository/org/jboss/spec/javax/annotation/jboss-annotations-api_1.1_spec/1.0.1.Final/jboss-annotations-api_1.1_spec-1.0.1.Final-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/org/apache/httpcomponents/httpclient/4.2.6/httpclient-4.2.6.jar" sourcepath="M2_REPO/org/apache/httpcomponents/httpclient/4.2.6/httpclient-4.2.6-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/home/etuya/.m2/repository/org/apache/httpcomponents/httpclient/4.2.6/httpclient-4.2.6-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/org/apache/httpcomponents/httpcore/4.2.5/httpcore-4.2.5.jar" sourcepath="M2_REPO/org/apache/httpcomponents/httpcore/4.2.5/httpcore-4.2.5-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/home/etuya/.m2/repository/org/apache/httpcomponents/httpcore/4.2.5/httpcore-4.2.5-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar" sourcepath="M2_REPO/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/home/etuya/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/commons-codec/commons-codec/1.6/commons-codec-1.6.jar" sourcepath="M2_REPO/commons-codec/commons-codec/1.6/commons-codec-1.6-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/home/etuya/.m2/repository/commons-codec/commons-codec/1.6/commons-codec-1.6-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/commons-io/commons-io/2.1/commons-io-2.1.jar" sourcepath="M2_REPO/commons-io/commons-io/2.1/commons-io-2.1-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/home/etuya/.m2/repository/commons-io/commons-io/2.1/commons-io-2.1-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/net/jcip/jcip-annotations/1.0/jcip-annotations-1.0.jar" sourcepath="M2_REPO/net/jcip/jcip-annotations/1.0/jcip-annotations-1.0-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/jboss/resteasy/resteasy-multipart-provider/3.0.10.Final/resteasy-multipart-provider-3.0.10.Final.jar" sourcepath="M2_REPO/org/jboss/resteasy/resteasy-multipart-provider/3.0.10.Final/resteasy-multipart-provider-3.0.10.Final-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/jboss/resteasy/resteasy-client/3.0.10.Final/resteasy-client-3.0.10.Final.jar" sourcepath="M2_REPO/org/jboss/resteasy/resteasy-client/3.0.10.Final/resteasy-client-3.0.10.Final-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/apache/james/apache-mime4j/0.6/apache-mime4j-0.6.jar" sourcepath="M2_REPO/org/apache/james/apache-mime4j/0.6/apache-mime4j-0.6-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/home/etuya/.m2/repository/org/apache/james/apache-mime4j/0.6/apache-mime4j-0.6-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/org/jboss/resteasy/resteasy-jackson-provider/3.0.10.Final/resteasy-jackson-provider-3.0.10.Final.jar" sourcepath="M2_REPO/org/jboss/resteasy/resteasy-jackson-provider/3.0.10.Final/resteasy-jackson-provider-3.0.10.Final-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/codehaus/jackson/jackson-core-asl/1.9.12/jackson-core-asl-1.9.12.jar" sourcepath="M2_REPO/org/codehaus/jackson/jackson-core-asl/1.9.12/jackson-core-asl-1.9.12-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/home/etuya/.m2/repository/org/codehaus/jackson/jackson-core-asl/1.9.12/jackson-core-asl-1.9.12-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/org/codehaus/jackson/jackson-mapper-asl/1.9.12/jackson-mapper-asl-1.9.12.jar" sourcepath="M2_REPO/org/codehaus/jackson/jackson-mapper-asl/1.9.12/jackson-mapper-asl-1.9.12-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/home/etuya/.m2/repository/org/codehaus/jackson/jackson-mapper-asl/1.9.12/jackson-mapper-asl-1.9.12-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/org/codehaus/jackson/jackson-jaxrs/1.9.12/jackson-jaxrs-1.9.12.jar" sourcepath="M2_REPO/org/codehaus/jackson/jackson-jaxrs/1.9.12/jackson-jaxrs-1.9.12-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/home/etuya/.m2/repository/org/codehaus/jackson/jackson-jaxrs/1.9.12/jackson-jaxrs-1.9.12-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/org/codehaus/jackson/jackson-xc/1.9.12/jackson-xc-1.9.12.jar" sourcepath="M2_REPO/org/codehaus/jackson/jackson-xc/1.9.12/jackson-xc-1.9.12-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/home/etuya/.m2/repository/org/codehaus/jackson/jackson-xc/1.9.12/jackson-xc-1.9.12-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/org/jboss/resteasy/resteasy-html/3.0.10.Final/resteasy-html-3.0.10.Final.jar" sourcepath="M2_REPO/org/jboss/resteasy/resteasy-html/3.0.10.Final/resteasy-html-3.0.10.Final-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/com/fasterxml/jackson/module/jackson-module-jsonSchema/2.5.2/jackson-module-jsonSchema-2.5.2.jar"/>
+  <classpathentry kind="var" path="M2_REPO/com/fasterxml/jackson/core/jackson-annotations/2.5.0/jackson-annotations-2.5.0.jar"/>
+  <classpathentry kind="var" path="M2_REPO/com/fasterxml/jackson/core/jackson-core/2.5.3/jackson-core-2.5.3.jar"/>
+  <classpathentry kind="var" path="M2_REPO/com/fasterxml/jackson/core/jackson-databind/2.5.3/jackson-databind-2.5.3.jar"/>
+  <classpathentry kind="var" path="M2_REPO/log4j/log4j/1.2.16/log4j-1.2.16.jar" sourcepath="M2_REPO/log4j/log4j/1.2.16/log4j-1.2.16-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/home/etuya/.m2/repository/log4j/log4j/1.2.16/log4j-1.2.16-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/ar/com/asanteit/esp/apps/commons/app-commons-request/2.5.0/app-commons-request-2.5.0.jar" sourcepath="M2_REPO/ar/com/asanteit/esp/apps/commons/app-commons-request/2.5.0/app-commons-request-2.5.0-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/reflections/reflections/0.9.9/reflections-0.9.9.jar" sourcepath="M2_REPO/org/reflections/reflections/0.9.9/reflections-0.9.9-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/home/etuya/.m2/repository/org/reflections/reflections/0.9.9/reflections-0.9.9-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/com/google/guava/guava/15.0/guava-15.0.jar" sourcepath="M2_REPO/com/google/guava/guava/15.0/guava-15.0-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/home/etuya/.m2/repository/com/google/guava/guava/15.0/guava-15.0-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/org/javassist/javassist/3.18.2-GA/javassist-3.18.2-GA.jar" sourcepath="M2_REPO/org/javassist/javassist/3.18.2-GA/javassist-3.18.2-GA-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/home/etuya/.m2/repository/org/javassist/javassist/3.18.2-GA/javassist-3.18.2-GA-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/com/google/code/findbugs/annotations/2.0.1/annotations-2.0.1.jar"/>
+  <classpathentry kind="var" path="M2_REPO/ar/com/asanteit/commons/asante-commons-lang/0.1.5/asante-commons-lang-0.1.5.jar" sourcepath="M2_REPO/ar/com/asanteit/commons/asante-commons-lang/0.1.5/asante-commons-lang-0.1.5-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/ar/com/asanteit/esp/apps/commons/app-commons-crawler/2.5.7/app-commons-crawler-2.5.7.jar" sourcepath="M2_REPO/ar/com/asanteit/esp/apps/commons/app-commons-crawler/2.5.7/app-commons-crawler-2.5.7-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/com/googlecode/juniversalchardet/juniversalchardet/1.0.3/juniversalchardet-1.0.3.jar" sourcepath="M2_REPO/com/googlecode/juniversalchardet/juniversalchardet/1.0.3/juniversalchardet-1.0.3-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/home/etuya/.m2/repository/com/googlecode/juniversalchardet/juniversalchardet/1.0.3/juniversalchardet-1.0.3-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/org/jsoup/jsoup/1.8.1/jsoup-1.8.1.jar" sourcepath="M2_REPO/org/jsoup/jsoup/1.8.1/jsoup-1.8.1-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/home/etuya/.m2/repository/org/jsoup/jsoup/1.8.1/jsoup-1.8.1-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/org/apache/pdfbox/pdfbox/1.8.6/pdfbox-1.8.6.jar" sourcepath="M2_REPO/org/apache/pdfbox/pdfbox/1.8.6/pdfbox-1.8.6-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/home/etuya/.m2/repository/org/apache/pdfbox/pdfbox/1.8.6/pdfbox-1.8.6-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/org/apache/pdfbox/fontbox/1.8.6/fontbox-1.8.6.jar" sourcepath="M2_REPO/org/apache/pdfbox/fontbox/1.8.6/fontbox-1.8.6-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/home/etuya/.m2/repository/org/apache/pdfbox/fontbox/1.8.6/fontbox-1.8.6-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/org/apache/pdfbox/jempbox/1.8.6/jempbox-1.8.6.jar" sourcepath="M2_REPO/org/apache/pdfbox/jempbox/1.8.6/jempbox-1.8.6-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/home/etuya/.m2/repository/org/apache/pdfbox/jempbox/1.8.6/jempbox-1.8.6-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+</classpath>
