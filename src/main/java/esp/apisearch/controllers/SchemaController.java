@@ -33,9 +33,10 @@ public class SchemaController {
 		if(schema.hasErrors().isEmpty()){
 			try {
 				platform().getIndexService().createIndex(schema.getName(), false, false);
+				log.info("Creating Schema: "+schema);
 				platform().getIndexService().openIndex(schema.getName(), schema.generateEspSchema());
 			} catch (IndexException e) {
-				log.info("Index is already open (" + schema.getName() + ")");
+				log.warn("Index is already open (" + schema.getName() + ")");
 				return Response.serverError().build();
 			}
 			return Response.ok().build();

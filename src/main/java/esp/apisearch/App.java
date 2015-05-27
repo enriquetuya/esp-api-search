@@ -12,6 +12,7 @@ import ar.com.asanteit.esp.spi.Response;
 import esp.apisearch.controllers.IndexController;
 import esp.apisearch.controllers.SchemaController;
 import esp.apisearch.controllers.SearchController;
+import esp.apisearch.services.IndexManagerService;
 
 public class App  implements Application {
 
@@ -22,12 +23,25 @@ public class App  implements Application {
 		// Register REST services.
 		jaxrs = new JaxRsContext(platform);
 
+		
 		jaxrs.setAttribute("platform", platform);
+		IndexManagerService indexManagerService = new IndexManagerService(platform.getIndexService());
+		jaxrs.setAttribute("indexManagerService", indexManagerService);
+		
 		jaxrs.registerProvider(ThrowableMapper.class);
 		jaxrs.registerProvider(SchemaController.class);
 		jaxrs.registerProvider(IndexController.class);
 		jaxrs.registerProvider(SearchController.class);
 		jaxrs.init();
+		
+		
+		
+		Request commitRequest = Request.builder().requestType("/api/index/commit")
+		    .requestHost("localhost").requestPort(9090)//
+		    .requestMethod("GET")//
+		    .requestScheme("HTTP").build();
+		platform.getSchedulerService().scheduleRequest("commit_indexes", null,
+		    null, null, 90000l, true, commitRequest);
 	}
 
 

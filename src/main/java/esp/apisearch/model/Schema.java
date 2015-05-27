@@ -3,6 +3,7 @@ package esp.apisearch.model;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
+
 import esp.apisearch.model.Field;
 
 /*
@@ -56,5 +57,16 @@ public class Schema implements Serializable{
 			schema.add(field.generateEspField());
 		}
 		return schema;
+	}
+	
+	@Override
+	public String toString() {
+		String description = "schema:" + name;
+		description = description.concat("||fields:");
+		for (Field field : fields) {
+			description = description.concat(field.getName()).concat(",")
+			    .concat(field.getType()).concat("|");
+		}
+		return description;
 	}
 }
