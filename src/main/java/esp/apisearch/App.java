@@ -41,7 +41,7 @@ public class App  implements Application {
 		    .requestMethod("GET")//
 		    .requestScheme("HTTP").build();
 		platform.getSchedulerService().scheduleRequest("commit_indexes", null,
-		    null, null, 90000l, true, commitRequest);
+		    null, null, 180000l, true, commitRequest);
 	}
 
 

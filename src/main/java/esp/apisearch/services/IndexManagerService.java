@@ -2,6 +2,7 @@ package esp.apisearch.services;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
 
 import org.apache.log4j.Logger;
 
@@ -12,7 +13,7 @@ import ar.com.asanteit.esp.spi.index.WriteTransaction;
 public class IndexManagerService {
 	private final Logger log = Logger.getLogger(IndexManagerService.class);
 
-	private Map<String, WriteTransaction> txMap = new HashMap<String, WriteTransaction>();
+	private Map<String, WriteTransaction> txMap = new ConcurrentHashMap<String, WriteTransaction>();
 	private IndexService indexService;
 
 	public IndexManagerService(IndexService theIndexService) {
