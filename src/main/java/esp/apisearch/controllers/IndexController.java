@@ -32,6 +32,9 @@ public class IndexController {
 	@Produces(MediaType.APPLICATION_JSON)
 	public Response add(@QueryParam("index") String index,
 	    HashMap<String, String> values) throws ApplicationException {
+		if (!indexManagerService().isIndexCreated(index)) {
+			return Response.status(408).build();
+    }
 		log.debug("About to add to add to index: " + index);
 		Document document = new Document();
 		for (String key : values.keySet()) {

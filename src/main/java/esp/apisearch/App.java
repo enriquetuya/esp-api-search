@@ -53,8 +53,9 @@ public class App  implements Application {
 
 
 	@Override
-  public void onUnload(Platform arg0) throws ApplicationException {
+  public void onUnload(Platform platform) throws ApplicationException {
 		jaxrs.destroy();
+		platform.getSchedulerService().unschedule("commit_indexes");
   }
 
 }

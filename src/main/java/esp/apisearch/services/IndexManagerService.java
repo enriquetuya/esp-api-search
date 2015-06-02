@@ -1,6 +1,5 @@
 package esp.apisearch.services;
 
-import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
@@ -31,16 +30,24 @@ public class IndexManagerService {
 			}
 		}
 	}
-	
+
 	public WriteTransaction getWriteTransaction(String index)
 	    throws IndexException {
 		if (txMap.get(index) != null) {
 			return txMap.get(index);
 		} else {
-			log.info("Creating write Transaction for: "+index);
+			log.info("Creating write Transaction for: " + index);
 			txMap.put(index, indexService.writeTransaction(index));
 			return txMap.get(index);
 		}
 	}
 
+	public boolean isIndexCreated(String index) {
+		try {
+			indexService.readTransaction(index);
+			return true;
+		} catch (IndexException e) {
+			return false;
+		}
+	}
 }
