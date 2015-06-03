@@ -1,6 +1,7 @@
 package esp.apisearch.controllers;
 
-import java.util.HashMap;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import javax.servlet.ServletContext;
 import javax.ws.rs.Consumes;
@@ -17,6 +18,11 @@ import org.apache.log4j.Logger;
 
 import ar.com.asanteit.esp.spi.ApplicationException;
 import ar.com.asanteit.esp.spi.index.Document;
+
+import com.eclipsesource.json.JsonObject;
+import com.eclipsesource.json.JsonObject.Member;
+import com.eclipsesource.json.JsonValue;
+
 import esp.apisearch.services.IndexManagerService;
 
 @Path("/api/index/")
@@ -25,22 +31,34 @@ public class IndexController {
 
 	@Context
 	private ServletContext context;
-	
+
 	@POST
 	@Path("")
 	@Consumes(MediaType.APPLICATION_JSON)
 	@Produces(MediaType.APPLICATION_JSON)
 	public Response add(@QueryParam("index") String index,
-	    HashMap<String, String> values) throws ApplicationException {
+	    String json) throws ApplicationException {
 		if (!indexManagerService().isIndexCreated(index)) {
 			return Response.status(408).build();
-    }
+		}
 		log.debug("About to add to add to index: " + index);
 		Document document = new Document();
-		for (String key : values.keySet()) {
-			document.setField(key, values.get(key));
+
+		JsonObject jsonObject = JsonObject.readFrom(json);
+		for (Member member : jsonObject) {
+			if (member.getValue().isString()) {
+				document.setField(member.getName(), member.getValue().asString());
+			} else if (member.getName().equalsIgnoreCase("facets")) {
+				for (JsonValue value : member.getValue().asArray()) {
+					if (value.isString()) {
+						String facetPath = value.asString();
+						if(isFacetPathValid(facetPath)) document.addFacet(facetPath);
+					}
+				}
+			}
 		}
-		indexManagerService().getWriteTransaction(index).addDocument(document); 
+
+		indexManagerService().getWriteTransaction(index).addDocument(document);
 		return Response.ok().build();
 	}
 
@@ -51,7 +69,12 @@ public class IndexController {
 	}
 
 	private IndexManagerService indexManagerService() {
-		return (IndexManagerService)context.getAttribute("indexManagerService");
+		return (IndexManagerService) context.getAttribute("indexManagerService");
+	}
+	
+	private boolean isFacetPathValid(String facetPath){
+		String pattern = "(/[a-zA-Z0-9_-]+)+?";
+		return Pattern.matches(pattern, facetPath);
 	}
 
 }
