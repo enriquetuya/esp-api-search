@@ -44,25 +44,6 @@ public class IndexController {
 		return Response.ok().build();
 	}
 
-//	@POST
-//	@Path("/async")
-//	@Consumes(MediaType.APPLICATION_JSON)
-//	@Produces(MediaType.APPLICATION_JSON)
-//	public Response async_add(@QueryParam("index") String index, String json)
-//	    throws ApplicationException {
-//		Request indexRequest = Request.builder().requestType("/api/index")
-//		    //
-//		    .param("index", index)
-//		    //
-//		    .stream(new ByteArrayInputStream(json.getBytes()))
-//		    .requestHost("localhost").requestPort(9090)//
-//		    .requestMethod("POST")//
-//		    .requestScheme("HTTP")//
-//		    .contentType(MediaType.APPLICATION_JSON).build();
-//		platform().getSchedulerService().async(indexRequest);
-//		return Response.ok().build();
-//	}
-
 	@GET
 	@Path("/commit")
 	public void commitIndex() throws ApplicationException {
